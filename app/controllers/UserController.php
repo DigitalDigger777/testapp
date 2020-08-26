@@ -98,6 +98,8 @@ class UserController extends \Phalcon\Mvc\Controller
                         }
 
                     }
+                } else {
+                    $this->flash->error('user already exists');
                 }
             }
         }
